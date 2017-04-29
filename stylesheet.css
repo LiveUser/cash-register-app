@@ -1,0 +1,152 @@
+body{
+margin:0;
+padding:0;
+}
+#function{
+    width:50%;
+    height: 100vh;
+    display: inline-block;
+    float: left;
+}
+#currency{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    font-size: 50px;
+    color: rgb(26,161,47);
+}
+#input{
+    width: 100%;
+    height: 10vh;
+    font-size: 50px;
+    text-align: center;
+    float: left;
+    display: inline-block;
+    color: rgb(227,112,30);
+    margin:0;
+    padding:0;
+    border: 0;
+}
+#input:focus{
+    color: rgb(0,150,250);
+    background-color: rgb(56,57,55);
+}
+#enter{
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    background-color: rgb(1,60,97);
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh;
+    float: left;
+    display: inline-block;
+
+}
+#void{
+    width: 15%;
+    font-size: 30px;
+    background-color: rgb(197,2,8);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    height: 10vh;
+}
+#reset{
+    width: 85%;
+    font-size: 30px;
+    background-color: #b67f11;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    height: 10vh;
+    vertical-align: middle;
+    line-height: 10vh;
+}
+#total{
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    background-color: #0cad5a;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh;
+    float: left;
+    display: inline-block;
+}
+#checkout{
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    background-color: #0099ff;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh;
+    float: left;
+    display: inline-block;
+}
+#reciept{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+#log{
+    display: inline-block;
+    font-size: 26px;
+}
+td{
+    border: 1px solid;
+}
+.end{
+    font-size: 34px;
+    color: blue;
+}
+.voided{
+   color: red;
+}
+.tax{
+    color: #5d20c5;
+}
+#display{
+    float: left;
+    display: inline-block;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh;
+    font-size: 40px;
+}
+#earnings{
+    color: white;
+    background-color: #f1ec0a;
+    float: left;
+    display: inline-block;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh;
+    font-size: 40px;
+}
+#print{
+    float: left;
+    display: inline-block;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh;
+    font-size: 40px;
+    color: white;
+    background-color: #6666cc;
+}

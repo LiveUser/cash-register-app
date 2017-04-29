@@ -1,0 +1,29 @@
+<!Doctype html>
+    <html>
+        <head>
+            <link rel='stylesheet' href="stylesheet.css">
+            <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>-->
+            <script src="jspdf.js"></script>
+            <script src="jspdf.debug.js"></script>
+            <script src="script.js"></script>
+        </head>
+        <body>
+            <div id="function">
+                <div id="currency">$</div>
+                <input id="input" onkeypress="key(event);" autofocus></input>
+                <div onclick="plus();" id="enter">Add</div>
+                <div id="void" onclick="voidLast();">Void Last</div>
+                <div id="reset" onclick="handBrake();reset();">Reset</div>
+                <div id="total">subtotal</div>
+                <div id="checkout" onclick="final();">Checkout</div>
+                <div id="display"></div>
+                <div id="earnings" onclick="alert('Earned:$'+Number(Number(profit).toFixed(2))+' Taxed: $'+Number(Number(totalTax).toFixed(2)));">Earnings</div>
+                <div id="print" onclick="print2();">Print</div>
+            </div>
+            <div id="reciept">
+                <table id="log">
+                    
+                </table>
+            </div>
+        </body>
+    </html>
