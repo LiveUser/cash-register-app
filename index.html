@@ -19,11 +19,16 @@
                 <div id="display"></div>
                 <div id="earnings" onclick="alert('Earned:$'+Number(Number(profit).toFixed(2))+' Taxed: $'+Number(Number(totalTax).toFixed(2)));">Earnings</div>
                 <div id="print" onclick="print2();">Print</div>
+                <div id="help" onclick="helpShow();">Help</div>
             </div>
             <div id="reciept">
                 <table id="log">
                     
                 </table>
+            </div>
+            <div id="helping">
+               <p onclick="helpHide();"><span id="close">X</span></p>
+            <img id="helpSign" src="help.png"/>
             </div>
         </body>
     </html>

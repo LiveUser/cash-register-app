@@ -16,6 +16,7 @@ var minute=function(){let now=new Date();return now.getMinutes();};
 var seconds=function(){let now=new Date();return now.getSeconds();};
 var voidOnce=true;
 var doc = new jsPDF();
+var printOnce=false;
 
 // solution decimals alert(Number(parseFloat("0.4").toFixed(2))+Number(parseFloat("0.4").toFixed(2)));
 var plus= function(){
@@ -86,11 +87,14 @@ var specialElementHandlers = {
                     return true;
                 }};
 var print2=function(){
+    if(printOnce===false){
+    printOnce=true;
     document.getElementById("log").innerHTML+='<tr>'+'<td class="end">'+'Collected'+'</td>'+
     '<td class="end"> Profit: $'+Number(Number(profit).toFixed(2))+'</td>'+'<td class="end">Taxed: $'+Number(Number(totalTax).toFixed(2))+'</td>'+'</tr>';
     doc.text("FakeCorp "+month+"-"+day()+"-"+year()+" Sales",10,10);
     doc.fromHTML(document.getElementById("reciept").innerHTML, 15, 15, {'width': 170,'elementHandlers': specialElementHandlers});
-                doc.save( month+"-"+day()+"-"+year()+"Hour"+hour()+"Minute"+minute()+"Second"+seconds()+".pdf");
+                doc.save( month+"-"+day()+"-"+year()+".pdf");
+    }else{}
     };
     
 
@@ -121,4 +125,9 @@ function key(event){
 } 
     }
 //cool js feature String.fromCharCode(65);
-
+function helpShow(){
+    document.getElementById("helping").style.display = "initial";
+}
+function helpHide(){
+    document.getElementById("helping").style.display = "none";
+}
