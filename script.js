@@ -30,6 +30,7 @@ var plus= function(){
     hour()+":"+minute()+":"+seconds()+"</td>"+"<td>"+"$"+last+"</td>"+"</tr>";
     document.getElementById("display").innerHTML="";
     voidOnce=true;
+    document.getElementById('screen').innerHTML="Added $"+last;
     }else{document.getElementById('input').value="";}
     };
 
@@ -48,6 +49,7 @@ var final=function(){
     hour()+":"+minute()+":"+seconds()+"</td>"+"</tr>";
     document.getElementById("display").innerHTML="Total: $"+total;
     reset();
+    document.getElementById('screen').innerHTML="Displaying Total";
     }else{}
     };
 
@@ -57,12 +59,12 @@ var reset=function(){
     last=0;
     document.getElementById('total').innerHTML="";
     document.getElementById('input').value="";
-
     };
 var handBrake=function(){
     if(total>0){
     document.getElementById("log").innerHTML+='<tr>'+'<td class="voided">'+'Transaction Canceled'+'</td>'+'<td class="voided">Ammount'+
     '</td>'+'<td class="voided"> $'+Number(Number(total).toFixed(2))+'</td>'+'</tr>';
+    document.getElementById('screen').innerHTML="Canceled Transaction";
     }else{}
     };
 
@@ -74,6 +76,7 @@ var voidLast=function(){
     document.getElementById("log").innerHTML+='<tr>'+'<td class="voided">'+'Last input voided'+'</td>'+
     '<td class="voided">'+'Ammount'+'</td>'+'<td class="voided">'+"-$"+last+'</td>'+"</tr>";
     voidOnce=false;
+    document.getElementById('screen').innerHTML="Voided $"+last;
     }else{}
     };
 
